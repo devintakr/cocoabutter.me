@@ -1,0 +1,1449 @@
+
+/* =========================
+   HERO - SWEET RETRO CLUB
+========================= */
+
+.hero {
+    background-color: #f3e7d8;
+    padding: 20px 8% 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 25px;
+    border-bottom: 1px solid #d9c5b3;
+}
+
+.logo {
+    background: none;
+    color: #593b2e;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    background: none;
+    color: #654737;
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #b47758;
+    background: none;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 75px 0;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.small-label {
+    color: #a36f51;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    color: #583b2d;
+    font-size: clamp(42px, 5vw, 66px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    display: block;
+    color: #b47d5e;
+    font-style: italic;
+}
+
+.hero-text > p {
+    text-align: left;
+    color: #806555;
+    max-width: 400px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero-text .hero-note {
+    font-size: 12px;
+    color: #a36f51;
+    letter-spacing: 1px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #674636;
+    color: #fff8ed;
+    padding: 13px 25px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.hero-button:hover {
+    background: #a7795b;
+}
+
+/* HERO IMAGE */
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    max-width: 440px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 48% 48% 12px 12px;
+    border: 7px solid #fff8ed;
+    transform: rotate(2deg);
+}
+
+.sticker {
+    position: absolute;
+    bottom: 25px;
+    left: -30px;
+    background: #d9a18d;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    transform: rotate(-12deg);
+    line-height: 1.4;
+}
+
+/* BOTTOM TEXT */
+
+.hero-bottom {
+    border-top: 1px solid #d9c5b3;
+    padding: 17px 0;
+    text-align: center;
+    color: #99745d;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 43px;
+    }
+
+    .hero-text > p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        height: 320px;
+    }
+
+    .sticker {
+        left: -15px;
+    }
+
+    .hero-bottom {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* =========================
+   COCOA BUTTER - STYLE
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf6ef;
+    color: #493329;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+/* HEADER / BRAND */
+
+body > h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    color: #593b2e;
+    margin-top: 35px;
+    letter-spacing: 1px;
+}
+
+body > p {
+    text-align: center;
+    color: #846b5b;
+    font-size: 14px;
+}
+
+body > h2:first-of-type {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 35px 0;
+    color: #9b674d;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dfcbbb;
+    margin: 35px auto;
+    width: 85%;
+}
+
+/* GENERAL HEADING */
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #593b2e;
+    font-size: 30px;
+}
+
+/* ABOUT US */
+
+body > h2:not(:first-of-type) {
+    text-align: center;
+    margin: 45px 0 25px;
+}
+
+body > img {
+    display: block;
+    max-width: 85%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+body > p:not(:first-of-type) {
+    color: #72594b;
+}
+
+body > p:nth-of-type(4) {
+    max-width: 750px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    text-align: justify;
+    line-height: 1.9;
+}
+
+/* OUR PRODUCTS */
+
+.products {
+    background-color: #f0e4d5;
+    padding: 65px 7%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #593b2e;
+    letter-spacing: 1px;
+}
+
+.product-subtitle {
+    color: #987762;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.product-card {
+    background-color: #fffaf4;
+    width: 290px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e4d2c1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(75, 48, 34, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.product-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #634332;
+    font-size: 20px;
+    margin: 17px 0 8px;
+    text-align: center;
+}
+
+.product-card p {
+    color: #846d5c;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.product-card span {
+    color: #ad795b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ORDERING SECTION */
+
+ol {
+    max-width: 550px;
+    margin: 20px auto 35px;
+    padding-left: 45px;
+    color: #72594b;
+    line-height: 2.2;
+}
+
+/* CONTACT SECTION */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffaf4;
+    background-color: #76503c;
+    padding: 10px 22px;
+    margin: 8px 5px;
+    border-radius: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #a77b60;
+    transform: translateY(-2px);
+}
+
+body > p:last-of-type {
+    text-align: center;
+    margin: 20px 0 35px;
+}
+
+/* RESPONSIVE - MOBILE */
+
+@media (max-width: 768px) {
+
+    body > h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .products {
+        padding: 45px 5%;
+    }
+
+    .products h2 {
+        font-size: 28px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .product-card img {
+        height: 230px;
+    }
+
+    body > img {
+        max-width: 90%;
+    }
+
+    ol {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* ===== COCOA BUTTER HERO DECORATION ===== */
+
+/* Main brand */
+body > h1:first-of-type {
+    font-family: 'Playfair Display', serif;
+    font-size: 78px;
+    letter-spacing: -3px;
+    color: #603d2f;
+    margin-top: 65px;
+    margin-bottom: 5px;
+    text-shadow: 3px 3px 0 #ead6c3;
+}
+
+/* Tagline */
+body > p:nth-of-type(1) {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #89674f;
+}
+
+/* Less sugar badge */
+body > p:nth-of-type(2) {
+    display: table;
+    margin: 18px auto;
+    padding: 8px 22px;
+    border: 1px solid #c69a78;
+    border-radius: 30px;
+    background: #f4e9dc;
+    color: #76513d;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Main slogan */
+body > h2:first-of-type {
+    font-family: 'Playfair Display', serif;
+    font-size: 37px;
+    font-style: italic;
+    color: #ad7555;
+    margin: 45px 0 30px;
+    text-align: center;
+}
+
+body > h2:first-of-type::before {
+    content: "✦ ";
+    font-size: 22px;
+}
+
+body > h2:first-of-type::after {
+    content: " ✦";
+    font-size: 22px;
+}
+
+/* Hide duplicate brand title */
+body > h1:nth-of-type(2) {
+    display: none;
+}
+
+/* Small brand description */
+body > p:nth-of-type(3) {
+    display: table;
+    margin: 0 auto 40px;
+    padding: 7px 25px;
+    background: #ead8c7;
+    border-radius: 30px;
+    color: #76513d;
+    font-size: 13px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Decorative divider */
+body > hr {
+    width: 82%;
+    border: none;
+    border-top: 1px solid #d8bda7;
+    margin: 45px auto 65px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    body > h1:first-of-type {
+        font-size: 53px;
+    }
+
+    body > h2:first-of-type {
+        font-size: 27px;
+    }
+}
+
+/* ===== ABOUT US - COCOA BUTTER ===== */
+
+/* Judul Tentang Kami */
+body > h2:nth-of-type(2) {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #603d2f;
+    margin: 65px 0 35px;
+}
+
+/* Foto di sebelah kanan */
+body > h2:nth-of-type(2) + img {
+    float: right;
+    width: 300px;
+    height: 340px;
+    object-fit: cover;
+    margin: 5px 9% 30px 40px;
+    border-radius: 150px 150px 12px 12px;
+    border: 7px solid #fffaf4;
+    box-shadow: 8px 8px 0 #ead8c7;
+    transform: rotate(2deg);
+}
+
+/* Deskripsi di sebelah kiri */
+body > h2:nth-of-type(2) + img + p {
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    padding: 20px 9%;
+    color: #806b5c;
+    font-size: 14px;
+    line-height: 2;
+    text-align: left;
+}
+
+/* Dekorasi tulisan */
+body > h2:nth-of-type(2) + img + p::first-line {
+    color: #a87557;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Supaya bagian berikutnya tidak tertabrak foto */
+body > h2:nth-of-type(3) {
+    clear: both;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+
+    body > h2:nth-of-type(2) + img {
+        float: none;
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        height: 320px;
+        margin: 20px auto;
+    }
+
+    body > h2:nth-of-type(2) + img + p {
+        padding: 15px 8%;
+        text-align: left;
+    }
+}
+
+/* =========================
+   HOW TO ORDER
+   SWEET ORDERING GUIDE
+========================= */
+
+/* Section Heading */
+
+body > h2:nth-of-type(3) {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #603d2f;
+    margin: 75px 0 15px;
+}
+
+body > h2:nth-of-type(3)::before {
+    content: "✦ THE SWEET ORDERING GUIDE ✦";
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #b17a5b;
+    margin-bottom: 12px;
+}
+
+/* Ordering Steps */
+
+body > h2:nth-of-type(3) + ol {
+    list-style: none;
+    counter-reset: order;
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+body > h2:nth-of-type(3) + ol li {
+    counter-increment: order;
+    position: relative;
+    background-color: #f1e5d8;
+    border: 1px solid #e2cdb9;
+    border-radius: 12px;
+    padding: 20px 20px 20px 75px;
+    margin-bottom: 18px;
+    color: #70513f;
+    font-size: 14px;
+    line-height: 1.7;
+    box-shadow: 4px 4px 0 #e5d2bf;
+    transition: 0.3s ease;
+}
+
+/* Number Decoration */
+
+body > h2:nth-of-type(3) + ol li::before {
+    content: "0" counter(order);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #a9785b;
+    color: #fffaf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+
+body > h2:nth-of-type(3) + ol li:hover {
+    transform: translateX(7px);
+    background-color: #ead7c5;
+}
+
+/* Mascot Image */
+
+body > h2:nth-of-type(3) + ol + img {
+    display: block;
+    width: 250px;
+    height: 280px;
+    object-fit: contain;
+    margin: 35px auto 65px;
+    padding: 15px;
+    background-color: #fffaf4;
+    border: 2px dashed #c69a78;
+    border-radius: 48% 48% 15px 15px;
+    box-shadow: 7px 7px 0 #ead8c7;
+    transition: 0.3s ease;
+}
+
+body > h2:nth-of-type(3) + ol + img:hover {
+    transform: rotate(-3deg) scale(1.03);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    body > h2:nth-of-type(3) {
+        font-size: 30px;
+        margin-top: 55px;
+    }
+
+    body > h2:nth-of-type(3) + ol {
+        padding: 0 25px;
+    }
+
+    body > h2:nth-of-type(3) + ol li {
+        font-size: 13px;
+        padding: 17px 15px 17px 65px;
+    }
+
+    body > h2:nth-of-type(3) + ol li::before {
+        left: 13px;
+        width: 35px;
+        height: 35px;
+    }
+
+    body > h2:nth-of-type(3) + ol + img {
+        width: 220px;
+        height: 250px;
+    }
+}
+
+/* CONTACT SECTION - COCOA BUTTER */
+
+body > h2:last-of-type {
+    background: #79513e;
+    color: #fff8ed;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding: 65px 20px 15px;
+    margin: 65px 0 0;
+}
+
+body > h2:last-of-type::before {
+    content: "✦ COME SAY HELLO ✦";
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    color: #e8c4a7;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+body > h2:last-of-type + p {
+    background: #79513e;
+    color: #f2dfcc;
+    text-align: center;
+    padding: 15px 15px;
+    margin: 0;
+    font-size: 14px;
+}
+
+body > h2:last-of-type + p + p {
+    background: #79513e;
+    text-align: center;
+    padding: 15px 15px 50px;
+    margin: 0;
+}
+
+body > h2:last-of-type + p + p a {
+    background: #f5e8d9;
+    color: #704b38;
+    border-radius: 30px;
+    padding: 13px 27px;
+    margin: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+body > h2:last-of-type + p + p a:hover {
+    background: #d9a18d;
+    color: white;
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    body > h2:last-of-type {
+        font-size: 29px;
+        padding-top: 45px;
+    }
+}
+
+/* LOGO WHATSAPP */
+
+body > h2:last-of-type + p + p a:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 9px;
+    vertical-align: -4px;
+    background-color: currentColor;
+    -webkit-mask: url("https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/whatsapp.svg") center / contain no-repeat;
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/whatsapp.svg") center / contain no-repeat;
+}
+
+/* LOGO INSTAGRAM */
+
+body > h2:last-of-type + p + p a:last-child::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 9px;
+    vertical-align: -4px;
+    background-color: currentColor;
+    -webkit-mask: url("https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg") center / contain no-repeat;
+    mask: url("https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/instagram.svg") center / contain no-repeat;
+}
+
+
+
+
+/* =========================
+   COCOA BUTTER - PRICE MENU
+   VINTAGE BAKERY STYLE
+========================= */
+
+.price-section {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #fffaf3;
+    border: 1px solid #dfc9b5;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0 #ead8c7;
+    position: relative;
+}
+
+/* Decorative top line */
+.price-section::before {
+    content: "✦ FRESHLY MADE WITH LOVE ✦";
+    display: block;
+    text-align: center;
+    color: #b17a5b;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+/* Heading */
+.price-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #603d2f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-subtitle {
+    color: #a17c63;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #654735;
+    font-size: 14px;
+}
+
+/* Table header */
+.price-table th {
+    background: #79513e;
+    color: #fff8ed;
+    padding: 17px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.price-table th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.price-table th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+/* Product rows */
+.price-table td {
+    padding: 20px 17px;
+    border-bottom: 1px dashed #d9bda5;
+    background: #fffaf3;
+}
+
+.price-table td:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #603d2f;
+}
+
+.price-table td:last-child {
+    color: #a16e50;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Hover effect */
+.price-table tbody tr:hover td {
+    background: #f3e6d9;
+    transition: 0.3s ease;
+}
+
+/* Last row */
+.price-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Bottom decoration */
+.price-section::after {
+    content: "THANK YOU FOR CHOOSING COCOA BUTTER ♡";
+    display: block;
+    text-align: center;
+    color: #b17a5b;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 28px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .price-section {
+        margin: 50px 15px;
+        padding: 25px 18px;
+    }
+
+    .price-section h2 {
+        font-size: 29px;
+    }
+
+    .price-table {
+        min-width: 400px;
+    }
+
+    .price-table td {
+        padding: 16px 12px;
+    }
+}
+
+/* ONLY RESIZE PRICE LIST BOX */
+
+.price-section {
+    max-width: 700px;
+    padding: 30px;
+    margin: 55px auto;
+}
+
+/* ==========================
+   CONTACT SECTION
+   COCOA BUTTER
+========================== */
+
+.contact-section {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 35px;
+    background: #fffaf4;
+    border: 1px solid #ead8c7;
+    border-radius: 15px;
+}
+
+/* HEADING */
+
+.contact-heading span {
+    color: #a8795d;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.contact-heading h2 {
+    font-family: 'Playfair Display', serif;
+    color: #603d2f;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.contact-heading > p {
+    color: #a17c63;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* CARD */
+
+.contact-card {
+    background: #f8f0e7;
+    border: 1px solid #ead8c7;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* INFORMATION */
+
+.contact-info {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fffdf9;
+    border: 1px solid #ead8c7;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.info-box > span {
+    font-size: 20px;
+}
+
+.info-box strong {
+    color: #603d2f;
+    font-size: 15px;
+}
+
+.info-box p {
+    color: #795b48;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* FORM */
+
+#orderForm {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    color: #603d2f;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddc6b1;
+    border-radius: 8px;
+    background: #fffdf9;
+    color: #603d2f;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a8795d;
+    box-shadow: 0 0 0 3px #ead8c7;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* BUTTON */
+
+.order-button {
+    background: #79513e;
+    color: #fffaf4;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-button:hover {
+    background: #a8795d;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .contact-section {
+        margin: 40px 15px;
+        padding: 20px;
+    }
+
+    .contact-heading h2 {
+        font-size: 28px;
+    }
+
+    .contact-card {
+        padding: 17px;
+    }
+
+    .order-button {
+        width: 100%;
+    }
+}
+
+
+
+/* LAYOUT CARA PEMESANAN & CONTACT */
+.bottom-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* CARA PEMESANAN - VINTAGE STYLE */
+.order-section {
+    position: relative;
+    background: #ead9c2;
+    padding: 35px 30px;
+    border: 1px solid #b99b79;
+    border-radius: 5px 25px 5px 25px;
+    box-shadow: 6px 6px 0 #b99b79;
+    overflow: hidden;
+}
+
+.order-section::before {
+    content: "HOW TO ORDER";
+    display: inline-block;
+    background: #704b35;
+    color: #fff4e5;
+    padding: 7px 14px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.order-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    color: #583923;
+    margin: 0 0 22px;
+}
+
+.order-section ol {
+    list-style: none;
+    counter-reset: order;
+    padding: 0;
+    margin: 0;
+}
+
+.order-section li {
+    counter-increment: order;
+    position: relative;
+    padding: 12px 0 12px 48px;
+    border-bottom: 1px dashed #b99b79;
+    color: #68452f;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.order-section li::before {
+    content: "0" counter(order);
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #9b6946;
+}
+
+.order-section img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 25px auto 0;
+    border-radius: 5px 20px 5px 20px;
+    border: 5px solid #fff4e5;
+    transform: rotate(-2deg);
+}
+
+/* CONTACT SECTION */
+.bottom-layout .contact-section {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.bottom-layout .contact-heading {
+    margin-bottom: 20px;
+}
+
+.bottom-layout .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+    .bottom-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+}
+/* ===== FIX LAYOUT CARA PEMESANAN & CONTACT ===== */
+
+.bottom-layout {
+    display: grid;
+    grid-template-columns: 0.65fr 1.35fr;
+    gap: 30px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.bottom-layout .contact-section {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+}
+
+.bottom-layout .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* MAP LOKASI */
+
+.bottom-layout .map-box {
+    position: static;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 25px 0;
+    padding: 20px;
+    background: #fffaf4;
+    border: 1px solid #dfc9b5;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0 #ead8c7;
+}
+
+.bottom-layout .map-container {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.bottom-layout .map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+/* TAMPILAN HP */
+
+@media (max-width: 768px) {
+    .bottom-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .bottom-layout .map-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bottom-layout .map-container {
+        height: 165px;
+    }
+}
+
+
+/* =================================
+   MAPS + OPENING HOURS + INSTAGRAM
+================================= */
+
+.bottom-layout .contact-section .map-info-layout {
+    display: grid;
+    grid-template-columns: 1.25fr 0.9fr;
+    gap: 18px;
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* KARTU MAPS */
+.bottom-layout .contact-section .map-info-layout .map-box {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    padding: 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #fffaf4;
+    border: 1px solid #dfc9b5;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0 #ead8c7;
+}
+
+.bottom-layout .contact-section .map-info-layout .map-box h3 {
+    margin: 0 0 18px;
+    color: #684832;
+}
+
+/* UKURAN PETA */
+.bottom-layout .contact-section .map-info-layout .map-container {
+    width: 100%;
+    height: 320px;
+    flex: none;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.bottom-layout .contact-section .map-info-layout .map-container iframe {
+    width: 100%;
+    height: 100% !important;
+    display: block;
+    border: 0;
+}
+
+/* LINK GOOGLE MAPS */
+.bottom-layout .contact-section .map-info-layout .map-link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+/* KOTAK INFORMASI SAMPING */
+.bottom-layout .contact-section .map-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 0;
+}
+
+/* OPENING HOURS & INSTAGRAM */
+.bottom-layout .contact-section .info-box {
+    flex: 1;
+    min-height: 0;
+    padding: 22px;
+    box-sizing: border-box;
+    background: #fffaf4;
+    border: 1px solid #dfc9b5;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0 #ead8c7;
+    color: #684832;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-layout .contact-section .info-box h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    margin: 0 0 15px;
+    color: #684832;
+}
+
+.bottom-layout .contact-section .info-box p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 5px 0;
+}
+
+.bottom-layout .contact-section .info-box h4 {
+    font-size: 21px;
+    margin: 8px 0;
+    color: #8b5738;
+}
+
+.bottom-layout .contact-section .info-box .info-note {
+    font-style: italic;
+    color: #a1846d;
+}
+
+.bottom-layout .contact-section .instagram-box a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #9b6040;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+    .bottom-layout .contact-section .map-info-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-layout .contact-section .map-info-layout .map-container {
+        height: 220px;
+    }
+
+    .bottom-layout .contact-section .map-side-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-layout .contact-section .map-side-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+

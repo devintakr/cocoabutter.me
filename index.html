@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocoa Butter - Artisan Cakery</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <h1>Cocoa Butter</h1>
+    <p>Custom cake & Gifting for Every Celebration</p>
+    <p>Less Sugar * Gluten Free Option</p>
+    <h2>layers of joy, baked with love!</h2>
+<h1>Cocoa Butter</h1>
+<p><em>Cake, dessert & hampers</em></p>
+<hr>
+
+<h2> Our Little Story</h2>
+<img src="Images/profil-1.jpg" alt="Cocoa Butter #1 Custom cake Purwokerto" width="300">
+<p>A Little Story Behind Every Sweet Bite!
+Cocoa Butter is more than just a bakery. We're here to make every celebration a little sweeter and every moment a little more special.
+We believe that good desserts don't have to be overly sweet. That's why we create delicious treats with less sugar and gluten-free options, without compromising the taste.
+From little treats to special celebrations, Cocoa Butter is made to bring happiness in every bite. Because life's too short for boring desserts!
+Made with love, served with joy. ♡ </p>
+
+<!-- OUR PRODUCTS -->
+<section class="products" id="products">
+    <h2>OUR BEST SELLER PRODUCT</h2>
+    <p class="product-subtitle">
+        Sweet treats, made to make your day!
+    </p>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="images/pictachio kunafa.jpeg" alt="Salt bread pisatchio kunafa">
+            <h3>Salt Bread Pistachio Kunafa</h3>
+            <p>Nutty and curnchy with a delightfull blend of pistachio and crispy kunafa.</p>
+            <span>Made with love ♡</span>
+        </div>
+
+        <div class="product-card">
+            <img src="Images/garlic cheese.jpeg" alt="Salt Bread Garlic Cheese">
+            <h3>Salt Bread Garlic Cheese</h3>
+            <p>Savory, buttery, garlicky, cheesy, with a crispy crust and rich garlic cheese flavor. 🧄🧀</p>
+            <span>Made with love ♡</span>
+        </div>
+
+        <div class="product-card">
+            <img src="images/Ub mochi.jpeg" alt="Salt Bread UB mochi"">
+            <h3>UB Mochi</h3>
+            <p>Pretty purple treats with a delicious twist.</p>
+            <span>Made with love ♡</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRICE LIST -->
+<section class="price-section">
+    <h2>Our Price List ♡</h2>
+    <p class="price-subtitle">A little sweetness at the right price.</p>
+
+    <div class="table-container">
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Custom Cake</td>
+                    <td>Start from Rp60.000</td>
+                </tr>
+
+                <tr>
+                    <td>Cheesecake Slice</td>
+                    <td>Rp35.000 – Rp40.000</td>
+                </tr>
+
+                <tr>
+                    <td>Cheesecake 8 cm</td>
+                    <td>Rp40.000 – Rp45.000</td>
+                </tr>
+
+                <tr>
+                    <td>Salt Bread</td>
+                    <td>Rp25.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<div class="bottom-layout">
+    <div class="order-section">
+<h2> Cara Pemesanan</h2>
+<ol>
+    <li>Lihat katalog pada link di Bio Instragam</li>
+    <li>Konsultasi desain cake melalui whatsapp</li>
+    <li>Lakukan pembayaran, pesan masuk dalam antrean</li>
+</ol>
+<img src="Images/profil-2.png" alt="Sampai bertemu di store!" width="300">
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+    <div class="contact-heading">
+        <span>PEMESANAN & LOKASI</span>
+        <h2>Let's Get in Touch!</h2>
+        <p>Have a sweet day? Let's make it sweeter ♡</p>
+    </div>
+
+    <div class="contact-card">
+
+        <!-- INFORMASI ALAMAT -->
+        <div class="contact-info">
+
+            <div class="info-box">
+                <span>📍</span>
+                <div>
+                    <strong>Alamat</strong>
+                    <p>Jl. Prof Dr. Soeharso, Purwokerto Timur</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <span>🕒</span>
+                <div>
+                    <strong>Jam Operasional</strong>
+                    <p>Hubungi kami untuk informasi jam operasional</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORM PEMESANAN -->
+        <form id="orderForm" onsubmit="kirimWhatsApp(event)">
+
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" id="nama"
+                    placeholder="Masukkan nama kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nomor WhatsApp</label>
+                <input type="tel" id="nomor"
+                    placeholder="Contoh: 08123456789" required>
+            </div>
+
+            <div class="form-group">
+                <label>Pilih Produk / Menu</label>
+                <select id="produk">
+                    <option value="">-- Pilih produk --</option>
+                    <option>Custom Cake</option>
+                    <option>Cheesecake Slice</option>
+                    <option>Cheesecake 8 cm</option>
+                    <option>Salt Bread</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Pesan</label>
+                <textarea id="pesan"
+                    placeholder="Tulis jumlah pesanan, catatan, atau request kamu..."
+                    rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="order-button">
+                Pesan via WhatsApp ♡
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- JAVASCRIPT WHATSAPP -->
+<script>
+function kirimWhatsApp(event) {
+
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const nomor = document.getElementById("nomor").value;
+    const produk = document.getElementById("produk").value;
+    const pesan = document.getElementById("pesan").value;
+
+    const nomorAdmin = "6282134741720";
+
+    const isiPesan =
+        "Halo Cocoa Butter! ♡\n\n" +
+        "Nama: " + nama + "\n" +
+        "Nomor WhatsApp: " + nomor + "\n" +
+        "Produk: " + (produk || "Belum dipilih") + "\n" +
+        "Pesanan: " + pesan;
+
+    const link = "https://wa.me/" + nomorAdmin +
+        "?text=" + encodeURIComponent(isiPesan);
+
+    window.open(link, "_blank");
+}
+</script>
+
+<!-- PETA LOKASI -->
+<div class="map-box">
+
+    <h3>📍 Peta Lokasi</h3>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Jl.+Prof.+Dr.+Soeharso,+Purwokerto+Timur,+Banyumas,+Jawa+Tengah&output=embed"
+            width="100%"
+            height="320"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <a
+        href="https://maps.app.goo.gl/Sq4WqaGME3WsTa3c8"
+        target="_blank"
+        class="map-link">
+        Buka di Google Maps ↗
+    </a>
+
+</div>
+<!-- INFORMASI SAMPING MAPS -->
+    <div class="map-side-info">
+
+        <div class="info-box">
+            <h3>🕒 Opening Hours</h3>
+            <p>Monday – Saturday</p>
+            <h4>08.00 – 22.00 WIB</h4>
+            <p class="info-note">Sunday by order</p>
+        </div>
+
+        <div class="info-box instagram-box">
+            <h3>♡ Find Us on Instagram</h3>
+            <p>Follow us for more sweet treats and updates!</p>
+            <a href="https://www.instagram.com/cocoabutte.me/"
+               target="_blank">
+                @cocoabutter.me ↗
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
